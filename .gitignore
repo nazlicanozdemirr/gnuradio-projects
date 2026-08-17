@@ -37,3 +37,6 @@ Thumbs.db
 *.log
 *.tmp
 ~$*
+
+# Locally curated imports that are published as separate repositories
+/_github_imports/

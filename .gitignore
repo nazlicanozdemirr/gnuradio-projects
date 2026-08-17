@@ -1,0 +1,39 @@
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Compiled native artifacts
+*.exe
+*.dll
+*.so
+*.o
+*.obj
+
+# Raw SDR captures and generated binary data
+*.bin
+*.npz
+*.soft_f32
+
+# GNU Radio generated Python output
+grcc_out/
+grcc_g3ruh_out/
+
+# Demodulator-generated outputs
+c_demod/outputs/
+
+# HDL simulation output
+*.vcd
+*.vvp
+
+# Editor and OS metadata
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+~$*

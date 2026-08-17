@@ -1,0 +1,8 @@
+* text=auto
+
+*.bin binary
+*.exe binary
+*.npz binary
+*.png binary
+*.vcd binary
+*.vvp binary

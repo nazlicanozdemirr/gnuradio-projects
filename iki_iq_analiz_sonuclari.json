@@ -1,0 +1,719 @@
+{
+  "warning": "Rec1/B için bu dosyadaki basit iki-küme h sonucu nihai değildir. Doğru fractional-clock faz-integralli sonuç h=0.464±0.003'tür; rec1_h_derin_dogrulama.json ve 07_Rec1_Modulasyon_Indisi_Dogrulama_ve_Duzeltme.md dosyalarına bakın.",
+  "analysis_parameters": {
+    "sample_rate_hz": 576000.0,
+    "symbol_rate_baud": 9600.0,
+    "samples_per_symbol": 60,
+    "h_definition": "h = tone_separation / symbol_rate = 2*deviation/symbol_rate"
+  },
+  "recordings": [
+    {
+      "label": "A",
+      "path": "C:\\Users\\nzlcn\\gnuradio\\iq_compare_A.bin",
+      "format_assumption": "interleaved float32 IQ / numpy complex64, native little-endian",
+      "file_bytes": 59506688,
+      "complex_samples": 7438336,
+      "sample_rate_hz": 576000.0,
+      "symbol_rate_baud_assumed": 9600.0,
+      "samples_per_symbol": 60,
+      "duration_seconds": 12.913777777777778,
+      "finite_fraction": 1.0,
+      "iq": {
+        "mean_i": -2.7171457043328903e-06,
+        "mean_q": -1.0942952364760814e-05,
+        "dc_magnitude": 1.1275242225158578e-05,
+        "std_i": 0.15941272154207278,
+        "std_q": 0.17193820774983137,
+        "std_i_over_std_q": 0.9271512343202793,
+        "correlation_iq": 0.00119188032838166
+      },
+      "envelope": {
+        "mean": 0.23380846944267314,
+        "std": 0.017571646117197814,
+        "coefficient_of_variation": 0.07515401883893756,
+        "rms": 0.23446782962694257,
+        "peak": 0.31066805124282837,
+        "papr_db": 2.444266596449323
+      },
+      "cpfsk_tones": {
+        "best_sample_phase": 26,
+        "tone_low_hz": -4273.044290355009,
+        "tone_high_hz": 2559.1950463042767,
+        "tone_center_hz": -856.9246220253663,
+        "tone_separation_hz": 6832.239336659286,
+        "deviation_hz": 3416.119668329643,
+        "modulation_index_h": 0.7116915975686756,
+        "cluster_rms_hz": 169.43952631922588,
+        "separation_over_2rms": 20.16129142083198,
+        "hard_one_fraction": 0.500375,
+        "decision_threshold_hz": -856.9246220253663
+      },
+      "per_second_summary": {
+        "windows": 11,
+        "h_mean": 0.7031803159487829,
+        "h_std": 0.02611414430661875,
+        "h_min": 0.6411386221070807,
+        "h_max": 0.7207856775119933,
+        "center_mean_hz": -857.7415485973411,
+        "center_std_hz": 1.3057907165789657,
+        "center_peak_to_peak_hz": 4.634783041154151,
+        "deviation_mean_hz": 3375.2655165541582,
+        "deviation_std_hz": 125.34789267177001,
+        "sample_phase_min": 21.0,
+        "sample_phase_max": 28.0
+      },
+      "per_second": [
+        {
+          "second": 1,
+          "phase": 28,
+          "tone_low_hz": -4313.581277026353,
+          "tone_high_hz": 2601.23175826277,
+          "center_hz": -856.1747593817913,
+          "deviation_hz": 3457.4065176445615,
+          "h": 0.7202930245092837,
+          "cluster_rms_hz": 117.49905234222061,
+          "cluster_quality_ratio": 29.42497363787011,
+          "one_fraction": 0.5021875
+        },
+        {
+          "second": 2,
+          "phase": 27,
+          "tone_low_hz": -4316.959319486766,
+          "tone_high_hz": 2602.5831846283695,
+          "center_hz": -857.1880674291981,
+          "deviation_hz": 3459.771252057568,
+          "h": 0.7207856775119933,
+          "cluster_rms_hz": 124.60202819246376,
+          "cluster_quality_ratio": 27.76657252090238,
+          "one_fraction": 0.4947916666666667
+        },
+        {
+          "second": 3,
+          "phase": 25,
+          "tone_low_hz": -4311.270191988112,
+          "tone_high_hz": 2598.841866400224,
+          "center_hz": -856.2141627939441,
+          "deviation_hz": 3455.056029194168,
+          "h": 0.7198033394154516,
+          "cluster_rms_hz": 131.85914342690467,
+          "cluster_quality_ratio": 26.202627587289445,
+          "one_fraction": 0.5069791666666666
+        },
+        {
+          "second": 4,
+          "phase": 24,
+          "tone_low_hz": -4314.246974266045,
+          "tone_high_hz": 2599.696450700408,
+          "center_hz": -857.2752617828185,
+          "deviation_hz": 3456.971712483227,
+          "h": 0.7202024401006722,
+          "cluster_rms_hz": 131.84454343336367,
+          "cluster_quality_ratio": 26.22005903665202,
+          "one_fraction": 0.5029166666666667
+        },
+        {
+          "second": 5,
+          "phase": 22,
+          "tone_low_hz": -4310.315367346607,
+          "tone_high_hz": 2596.142380519613,
+          "center_hz": -857.0864934134968,
+          "deviation_hz": 3453.2288739331098,
+          "h": 0.7194226820693979,
+          "cluster_rms_hz": 132.52144093947692,
+          "cluster_quality_ratio": 26.05788806288496,
+          "one_fraction": 0.5063541666666667
+        },
+        {
+          "second": 6,
+          "phase": 21,
+          "tone_low_hz": -4317.619150807583,
+          "tone_high_hz": 2600.7924573620144,
+          "center_hz": -858.4133467227841,
+          "deviation_hz": 3459.2058040847987,
+          "h": 0.7206678758509998,
+          "cluster_rms_hz": 138.26855609739889,
+          "cluster_quality_ratio": 25.018022186100442,
+          "one_fraction": 0.49885416666666665
+        },
+        {
+          "second": 7,
+          "phase": 21,
+          "tone_low_hz": -4299.254341326484,
+          "tone_high_hz": 2581.795757682533,
+          "center_hz": -858.7292918219755,
+          "deviation_hz": 3440.5250495045084,
+          "h": 0.716776051980106,
+          "cluster_rms_hz": 161.95055878571458,
+          "cluster_quality_ratio": 21.244292550153226,
+          "one_fraction": 0.49927083333333333
+        },
+        {
+          "second": 8,
+          "phase": 21,
+          "tone_low_hz": -4238.196826073587,
+          "tone_high_hz": 2524.822123878122,
+          "center_hz": -856.6873510977323,
+          "deviation_hz": 3381.5094749758546,
+          "h": 0.7044811406199697,
+          "cluster_rms_hz": 209.909140975751,
+          "cluster_quality_ratio": 16.109395995129585,
+          "one_fraction": 0.5077083333333333
+        },
+        {
+          "second": 9,
+          "phase": 21,
+          "tone_low_hz": -4154.265419965291,
+          "tone_high_hz": 2432.6463351193997,
+          "center_hz": -860.8095424229455,
+          "deviation_hz": 3293.455877542345,
+          "h": 0.6861366411546552,
+          "cluster_rms_hz": 282.0584841963364,
+          "cluster_quality_ratio": 11.676499953285658,
+          "one_fraction": 0.49635416666666665
+        },
+        {
+          "second": 10,
+          "phase": 21,
+          "tone_low_hz": -4052.095893316089,
+          "tone_high_hz": 2334.5535158071284,
+          "center_hz": -858.7711887544804,
+          "deviation_hz": 3193.324704561609,
+          "h": 0.6652759801170018,
+          "cluster_rms_hz": 367.4402375559696,
+          "cluster_quality_ratio": 8.690732201247263,
+          "one_fraction": 0.5008333333333334
+        },
+        {
+          "second": 11,
+          "phase": 21,
+          "tone_low_hz": -3935.272955063572,
+          "tone_high_hz": 2219.6578171644023,
+          "center_hz": -857.807568949585,
+          "deviation_hz": 3077.4653861139873,
+          "h": 0.6411386221070807,
+          "cluster_rms_hz": 457.6479107228489,
+          "cluster_quality_ratio": 6.7245262438829245,
+          "one_fraction": 0.5021875
+        }
+      ],
+      "timing_periodicity": {
+        "score_at_60_sps": 0.9159067884808696,
+        "rank_of_60_among_20_to_100": 1,
+        "top_candidates": [
+          {
+            "samples_per_symbol": 60,
+            "score": 0.9159067884808696
+          },
+          {
+            "samples_per_symbol": 90,
+            "score": 0.5141141400041643
+          },
+          {
+            "samples_per_symbol": 30,
+            "score": 0.513585433361624
+          },
+          {
+            "samples_per_symbol": 80,
+            "score": 0.32704183672366044
+          },
+          {
+            "samples_per_symbol": 40,
+            "score": 0.3268878176202483
+          },
+          {
+            "samples_per_symbol": 100,
+            "score": 0.3252219688533925
+          },
+          {
+            "samples_per_symbol": 20,
+            "score": 0.324539478075087
+          },
+          {
+            "samples_per_symbol": 75,
+            "score": 0.21955989467788342
+          },
+          {
+            "samples_per_symbol": 45,
+            "score": 0.21306075250817835
+          },
+          {
+            "samples_per_symbol": 72,
+            "score": 0.13722085154697666
+          }
+        ]
+      },
+      "hard_symbol_statistics_before_line_decode": {
+        "symbols_analyzed": 117773,
+        "one_fraction": 0.5007684273984699,
+        "transition_fraction": 0.498904663247631,
+        "mean_run_symbols": 2.004373872493958,
+        "max_run_symbols": 17
+      },
+      "spectrum": {
+        "occupied_bw_90": {
+          "low_hz": -5636.885340834799,
+          "high_hz": 3866.161628007221,
+          "width_hz": 9503.04696884202
+        },
+        "occupied_bw_99": {
+          "low_hz": -9704.57094324512,
+          "high_hz": 7910.555473993287,
+          "width_hz": 17615.126417238407
+        },
+        "occupied_bw_99_9": {
+          "low_hz": -18189.989717307686,
+          "high_hz": 16146.731250000812,
+          "width_hz": 34336.7209673085
+        },
+        "strongest_local_peaks": [
+          {
+            "frequency_hz": 3339.84375,
+            "psd_db_hz": -50.46241869493872
+          },
+          {
+            "frequency_hz": -5308.59375,
+            "psd_db_hz": -51.01002755150653
+          },
+          {
+            "frequency_hz": -3445.3125,
+            "psd_db_hz": -52.66590318522578
+          },
+          {
+            "frequency_hz": 1089.84375,
+            "psd_db_hz": -52.706920744960826
+          },
+          {
+            "frequency_hz": -808.59375,
+            "psd_db_hz": -52.758983051227446
+          },
+          {
+            "frequency_hz": -8507.8125,
+            "psd_db_hz": -67.32302183843935
+          },
+          {
+            "frequency_hz": 7242.1875,
+            "psd_db_hz": -67.43716889055993
+          },
+          {
+            "frequency_hz": -10406.25,
+            "psd_db_hz": -68.81414779440956
+          }
+        ]
+      }
+    },
+    {
+      "label": "B",
+      "path": "C:\\Users\\nzlcn\\gnuradio\\iq_compare_B.bin",
+      "format_assumption": "interleaved float32 IQ / numpy complex64, native little-endian",
+      "file_bytes": 102236160,
+      "complex_samples": 12779520,
+      "sample_rate_hz": 576000.0,
+      "symbol_rate_baud_assumed": 9600.0,
+      "samples_per_symbol": 60,
+      "duration_seconds": 22.186666666666667,
+      "finite_fraction": 1.0,
+      "iq": {
+        "mean_i": 1.8322275274471395e-05,
+        "mean_q": 6.857191532401388e-05,
+        "dc_magnitude": 7.097755520188925e-05,
+        "std_i": 0.5109988483450867,
+        "std_q": 0.5173081823622085,
+        "std_i_over_std_q": 0.9878035294390449,
+        "correlation_iq": 0.004647986101142406
+      },
+      "envelope": {
+        "mean": 0.725360456037845,
+        "std": 0.05079165023588227,
+        "coefficient_of_variation": 0.07002263469575223,
+        "rms": 0.727136564158531,
+        "peak": 1.005478024482727,
+        "papr_db": 2.815131988772361
+      },
+      "cpfsk_tones": {
+        "best_sample_phase": 50,
+        "tone_low_hz": -1739.2891932629232,
+        "tone_high_hz": 1966.5170096733304,
+        "tone_center_hz": 113.61390820520364,
+        "tone_separation_hz": 3705.8062029362536,
+        "deviation_hz": 1852.9031014681268,
+        "modulation_index_h": 0.3860214794725264,
+        "cluster_rms_hz": 628.851751942836,
+        "separation_over_2rms": 2.9464863471296487,
+        "hard_one_fraction": 0.5011041666666667,
+        "decision_threshold_hz": 113.61390820520364
+      },
+      "per_second_summary": {
+        "windows": 21,
+        "h_mean": 0.4027936208929709,
+        "h_std": 0.05064240835387638,
+        "h_min": 0.3022152451507872,
+        "h_max": 0.4497737712252165,
+        "center_mean_hz": 103.27439124172085,
+        "center_std_hz": 23.481895706021714,
+        "center_peak_to_peak_hz": 130.41235170416644,
+        "deviation_mean_hz": 1933.4093802862606,
+        "deviation_std_hz": 243.08356009860657,
+        "sample_phase_min": 45.0,
+        "sample_phase_max": 55.0
+      },
+      "per_second": [
+        {
+          "second": 1,
+          "phase": 46,
+          "tone_low_hz": -2041.3395341568064,
+          "tone_high_hz": 2266.0204378006783,
+          "center_hz": 112.34045182193597,
+          "deviation_hz": 2153.6799859787425,
+          "h": 0.448683330412238,
+          "cluster_rms_hz": 158.9744518382747,
+          "cluster_quality_ratio": 13.547333933691995,
+          "one_fraction": 0.5091666666666667
+        },
+        {
+          "second": 2,
+          "phase": 45,
+          "tone_low_hz": -1878.931370685737,
+          "tone_high_hz": 2097.8023356750446,
+          "center_hz": 109.4354824946538,
+          "deviation_hz": 1988.3668531803908,
+          "h": 0.4142430944125814,
+          "cluster_rms_hz": 361.4419221830645,
+          "cluster_quality_ratio": 5.501207057473857,
+          "one_fraction": 0.5011458333333333
+        },
+        {
+          "second": 3,
+          "phase": 55,
+          "tone_low_hz": -1359.8084140172548,
+          "tone_high_hz": 1541.4579394303018,
+          "center_hz": 90.82476270652353,
+          "deviation_hz": 1450.6331767237784,
+          "h": 0.3022152451507872,
+          "cluster_rms_hz": 887.8598015570077,
+          "cluster_quality_ratio": 1.6338538744291107,
+          "one_fraction": 0.5070833333333333
+        },
+        {
+          "second": 4,
+          "phase": 55,
+          "tone_low_hz": -1887.132982743806,
+          "tone_high_hz": 2101.506631695989,
+          "center_hz": 107.1868244760916,
+          "deviation_hz": 1994.3198072198975,
+          "h": 0.41548329317081195,
+          "cluster_rms_hz": 339.3776829628836,
+          "cluster_quality_ratio": 5.876402330904027,
+          "one_fraction": 0.4946875
+        },
+        {
+          "second": 5,
+          "phase": 53,
+          "tone_low_hz": -2047.8387923384264,
+          "tone_high_hz": 2267.116422392563,
+          "center_hz": 109.63881502706829,
+          "deviation_hz": 2157.477607365495,
+          "h": 0.4494745015344781,
+          "cluster_rms_hz": 163.01637759574,
+          "cluster_quality_ratio": 13.234729167616313,
+          "one_fraction": 0.5036458333333333
+        },
+        {
+          "second": 6,
+          "phase": 45,
+          "tone_low_hz": -2012.2470283444188,
+          "tone_high_hz": 2230.3973029451,
+          "center_hz": 109.07513730034054,
+          "deviation_hz": 2121.3221656447595,
+          "h": 0.44194211784265824,
+          "cluster_rms_hz": 204.47901942100796,
+          "cluster_quality_ratio": 10.374277867975813,
+          "one_fraction": 0.49822916666666667
+        },
+        {
+          "second": 7,
+          "phase": 45,
+          "tone_low_hz": -1640.5142275263497,
+          "tone_high_hz": 1832.5521707812106,
+          "center_hz": 96.01897162743046,
+          "deviation_hz": 1736.53319915378,
+          "h": 0.3617777498237042,
+          "cluster_rms_hz": 608.1600060195776,
+          "cluster_quality_ratio": 2.8553886838423215,
+          "one_fraction": 0.4875
+        },
+        {
+          "second": 8,
+          "phase": 55,
+          "tone_low_hz": -1645.1236301684992,
+          "tone_high_hz": 1870.7695790040364,
+          "center_hz": 112.82297441776859,
+          "deviation_hz": 1757.9466045862678,
+          "h": 0.36623887595547244,
+          "cluster_rms_hz": 578.3334437423364,
+          "cluster_quality_ratio": 3.0396765457843413,
+          "one_fraction": 0.5036458333333333
+        },
+        {
+          "second": 9,
+          "phase": 55,
+          "tone_low_hz": -2023.3770037749011,
+          "tone_high_hz": 2243.127207367413,
+          "center_hz": 109.87510179625599,
+          "deviation_hz": 2133.2521055711572,
+          "h": 0.4444275219939911,
+          "cluster_rms_hz": 200.020720028074,
+          "cluster_quality_ratio": 10.665155616236875,
+          "one_fraction": 0.4970833333333333
+        },
+        {
+          "second": 10,
+          "phase": 46,
+          "tone_low_hz": -2049.817270348828,
+          "tone_high_hz": 2267.204471481666,
+          "center_hz": 108.69360056641904,
+          "deviation_hz": 2158.5108709152473,
+          "h": 0.44968976477400985,
+          "cluster_rms_hz": 179.54435112307846,
+          "cluster_quality_ratio": 12.022159747234701,
+          "one_fraction": 0.49895833333333334
+        },
+        {
+          "second": 11,
+          "phase": 45,
+          "tone_low_hz": -1883.1321256969245,
+          "tone_high_hz": 2096.5611995219438,
+          "center_hz": 106.71453691250963,
+          "deviation_hz": 1989.8466626094341,
+          "h": 0.4145513880436321,
+          "cluster_rms_hz": 357.3937697583369,
+          "cluster_quality_ratio": 5.5676590667904815,
+          "one_fraction": 0.49666666666666665
+        },
+        {
+          "second": 12,
+          "phase": 55,
+          "tone_low_hz": -1320.4237376113906,
+          "tone_high_hz": 1589.3367294804004,
+          "center_hz": 134.45649593450491,
+          "deviation_hz": 1454.8802335458954,
+          "h": 0.30310004865539486,
+          "cluster_rms_hz": 884.0758126823998,
+          "cluster_quality_ratio": 1.645650986798973,
+          "one_fraction": 0.4965625
+        },
+        {
+          "second": 13,
+          "phase": 55,
+          "tone_low_hz": -1890.1308524304886,
+          "tone_high_hz": 2106.161083879553,
+          "center_hz": 108.01511572453228,
+          "deviation_hz": 1998.145968155021,
+          "h": 0.41628041003229604,
+          "cluster_rms_hz": 336.89220458043894,
+          "cluster_quality_ratio": 5.931113694493125,
+          "one_fraction": 0.5036458333333333
+        },
+        {
+          "second": 14,
+          "phase": 53,
+          "tone_low_hz": -2047.7034046658212,
+          "tone_high_hz": 2260.261177534986,
+          "center_hz": 106.27888643458243,
+          "deviation_hz": 2153.9822911004035,
+          "h": 0.4487463106459174,
+          "cluster_rms_hz": 156.94386351254875,
+          "cluster_quality_ratio": 13.724539736006802,
+          "one_fraction": 0.4978125
+        },
+        {
+          "second": 15,
+          "phase": 45,
+          "tone_low_hz": -2015.1967053418657,
+          "tone_high_hz": 2228.558865673131,
+          "center_hz": 106.6810801656327,
+          "deviation_hz": 2121.8777855074986,
+          "h": 0.4420578719807289,
+          "cluster_rms_hz": 203.7477532216482,
+          "cluster_quality_ratio": 10.414238939848339,
+          "one_fraction": 0.4975
+        },
+        {
+          "second": 16,
+          "phase": 45,
+          "tone_low_hz": -1638.6465353123194,
+          "tone_high_hz": 1851.5651383295485,
+          "center_hz": 106.45930150861454,
+          "deviation_hz": 1745.105836820934,
+          "h": 0.36356371600436127,
+          "cluster_rms_hz": 609.1195823943065,
+          "cluster_quality_ratio": 2.8649642652454737,
+          "one_fraction": 0.4978125
+        },
+        {
+          "second": 17,
+          "phase": 55,
+          "tone_low_hz": -1646.0022270768925,
+          "tone_high_hz": 1870.8706336385321,
+          "center_hz": 112.43420328081982,
+          "deviation_hz": 1758.4364303577122,
+          "h": 0.36634092299119003,
+          "cluster_rms_hz": 579.8956641972568,
+          "cluster_quality_ratio": 3.0323324330970753,
+          "one_fraction": 0.5035416666666667
+        },
+        {
+          "second": 18,
+          "phase": 55,
+          "tone_low_hz": -2022.8143671797798,
+          "tone_high_hz": 2238.608190044599,
+          "center_hz": 107.89691143240952,
+          "deviation_hz": 2130.7112786121893,
+          "h": 0.4438981830442061,
+          "cluster_rms_hz": 198.1516920910524,
+          "cluster_quality_ratio": 10.752930021072487,
+          "one_fraction": 0.49916666666666665
+        },
+        {
+          "second": 19,
+          "phase": 46,
+          "tone_low_hz": -2052.715911228382,
+          "tone_high_hz": 2265.1122925336963,
+          "center_hz": 106.1981906526571,
+          "deviation_hz": 2158.914101881039,
+          "h": 0.4497737712252165,
+          "cluster_rms_hz": 165.01625980127105,
+          "cluster_quality_ratio": 13.08303863195674,
+          "one_fraction": 0.4952083333333333
+        },
+        {
+          "second": 20,
+          "phase": 45,
+          "tone_low_hz": -1878.2169054412304,
+          "tone_high_hz": 2085.5593605713275,
+          "center_hz": 103.67122756504853,
+          "deviation_hz": 1981.888133006279,
+          "h": 0.4128933610429748,
+          "cluster_rms_hz": 357.61739452595606,
+          "cluster_quality_ratio": 5.541923193175193,
+          "one_fraction": 0.49333333333333335
+        },
+        {
+          "second": 21,
+          "phase": 55,
+          "tone_low_hz": -1451.721743845206,
+          "tone_high_hz": 1459.810032305883,
+          "center_hz": 4.044144230338475,
+          "deviation_hz": 1455.7658880755444,
+          "h": 0.3032845600157384,
+          "cluster_rms_hz": 886.4759653883762,
+          "cluster_quality_ratio": 1.642194424794986,
+          "one_fraction": 0.523125
+        }
+      ],
+      "timing_periodicity": {
+        "score_at_60_sps": 0.029304365377668704,
+        "rank_of_60_among_20_to_100": 44,
+        "top_candidates": [
+          {
+            "samples_per_symbol": 92,
+            "score": 0.0827059083317182
+          },
+          {
+            "samples_per_symbol": 69,
+            "score": 0.08144351164524474
+          },
+          {
+            "samples_per_symbol": 46,
+            "score": 0.08097732596272789
+          },
+          {
+            "samples_per_symbol": 23,
+            "score": 0.08077016502933788
+          },
+          {
+            "samples_per_symbol": 98,
+            "score": 0.08018818956284963
+          },
+          {
+            "samples_per_symbol": 75,
+            "score": 0.076734988968226
+          },
+          {
+            "samples_per_symbol": 86,
+            "score": 0.0729533468007031
+          },
+          {
+            "samples_per_symbol": 52,
+            "score": 0.07212142178146401
+          },
+          {
+            "samples_per_symbol": 81,
+            "score": 0.07126897712739878
+          },
+          {
+            "samples_per_symbol": 63,
+            "score": 0.0685922725887933
+          }
+        ]
+      },
+      "hard_symbol_statistics_before_line_decode": {
+        "symbols_analyzed": 203392,
+        "one_fraction": 0.4984512665198238,
+        "transition_fraction": 0.4993239622205506,
+        "mean_run_symbols": 2.0026979391289794,
+        "max_run_symbols": 25
+      },
+      "spectrum": {
+        "occupied_bw_90": {
+          "low_hz": -3720.2748270262236,
+          "high_hz": 3908.003515676458,
+          "width_hz": 7628.278342702682
+        },
+        "occupied_bw_99": {
+          "low_hz": -6057.714317577531,
+          "high_hz": 6242.462244423791,
+          "width_hz": 12300.176562001321
+        },
+        "occupied_bw_99_9": {
+          "low_hz": -11755.54263115382,
+          "high_hz": 11911.33198051962,
+          "width_hz": 23666.87461167344
+        },
+        "strongest_local_peaks": [
+          {
+            "frequency_hz": 843.75,
+            "psd_db_hz": -39.71256827619321
+          },
+          {
+            "frequency_hz": -1019.53125,
+            "psd_db_hz": -39.840660328595376
+          },
+          {
+            "frequency_hz": -10617.1875,
+            "psd_db_hz": -63.16358973581558
+          },
+          {
+            "frequency_hz": 10441.40625,
+            "psd_db_hz": -63.274066638289945
+          },
+          {
+            "frequency_hz": -19582.03125,
+            "psd_db_hz": -86.6015833307212
+          },
+          {
+            "frequency_hz": 19617.1875,
+            "psd_db_hz": -86.75647589236075
+          },
+          {
+            "frequency_hz": 17824.21875,
+            "psd_db_hz": -88.33115184770065
+          },
+          {
+            "frequency_hz": 23343.75,
+            "psd_db_hz": -93.74568976427824
+          }
+        ]
+      }
+    }
+  ]
+}

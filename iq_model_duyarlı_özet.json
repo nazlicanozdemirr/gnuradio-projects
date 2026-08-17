@@ -1,0 +1,60 @@
+{
+  "A": {
+    "name": "A",
+    "model": "2 seviyeli tam-tepkili CPFSK",
+    "phase": 57,
+    "centers_hz": [
+      -4397.413957029234,
+      2703.7403796470444
+    ],
+    "center_hz": -846.8367886910946,
+    "deviation_hz": 3550.577168338139,
+    "h": 0.7397035767371123,
+    "cluster_rms_hz": 287.0572275647928,
+    "weights": [
+      0.49732262382864795,
+      0.5026773761713521
+    ],
+    "inner_outer_ratio": null,
+    "duration_seconds": 12.913777777777778,
+    "h_per_second_mean": 0.7323863636363637,
+    "h_per_second_std": 0.013211330327576199,
+    "h_per_second_min": 0.7078125,
+    "h_per_second_max": 0.75625,
+    "center_per_second_mean_hz": -872.0454545454545,
+    "center_per_second_std_hz": 47.825656173540914,
+    "recommended_h_estimate": 0.7323863636363637,
+    "recommended_h_one_sigma": 0.013211330327576199
+  },
+  "B": {
+    "name": "B",
+    "model": "2 sembole yayılan kısmi-tepkili ikili CPM/CPFSK adayı",
+    "phase": 20,
+    "centers_hz": [
+      -3002.883916725101,
+      -1166.4621371107733,
+      1396.5729833882567,
+      3236.567788269112
+    ],
+    "center_hz": 108.08155457653852,
+    "deviation_hz": 2228.043151619129,
+    "h": 0.4641147857209901,
+    "cluster_rms_hz": 511.080111809611,
+    "weights": [
+      0.2764809236947791,
+      0.22213855421686746,
+      0.22356091030789826,
+      0.27781961178045517
+    ],
+    "inner_outer_ratio": 0.41077890200632733,
+    "duration_seconds": 22.186666666666667,
+    "h_per_second_mean": 0.4641147857209901,
+    "h_per_second_std": 0.0029371341788710895,
+    "h_per_second_min": 0.46086111830350335,
+    "h_per_second_max": 0.4705802715161281,
+    "center_per_second_mean_hz": 108.08155457653852,
+    "center_per_second_std_hz": 25.961710870485543,
+    "recommended_h_estimate": 0.4641147857209901,
+    "recommended_h_one_sigma": 0.0029371341788710895
+  }
+}

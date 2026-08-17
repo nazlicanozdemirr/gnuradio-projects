@@ -1,0 +1,32 @@
+{
+  "A": {
+    "crossings": 61849,
+    "accepted_gaps": 61819,
+    "samples_per_symbol": 60.000080707345866,
+    "symbol_rate_hz": 9599.987086842031,
+    "rate_offset_from_9600_hz": -0.01291315796879644,
+    "sample_drift_per_second": 0.7747894781265113,
+    "gap_fit_rms_samples": 0.18107632580689784,
+    "gap_fit_median_abs_samples": 0.12246319640746606
+  },
+  "B": {
+    "crossings": 106490,
+    "accepted_gaps": 106404,
+    "samples_per_symbol": 59.99213174597188,
+    "symbol_rate_hz": 9601.259085757942,
+    "rate_offset_from_9600_hz": 1.259085757941648,
+    "sample_drift_per_second": -75.54514547651813,
+    "gap_fit_rms_samples": 0.8047704214171402,
+    "gap_fit_median_abs_samples": 0.5392576985654358
+  },
+  "C": {
+    "crossings": 59342,
+    "accepted_gaps": 59315,
+    "samples_per_symbol": 59.99950689590051,
+    "symbol_rate_hz": 9600.078897304329,
+    "rate_offset_from_9600_hz": 0.07889730432907527,
+    "sample_drift_per_second": -4.733838259692407,
+    "gap_fit_rms_samples": 0.1771143861919954,
+    "gap_fit_median_abs_samples": 0.12048385293184083
+  }
+}

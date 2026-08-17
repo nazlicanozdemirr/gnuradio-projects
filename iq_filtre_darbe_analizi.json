@@ -1,0 +1,47 @@
+{
+  "A": {
+    "name": "A",
+    "integrate_phase": 24,
+    "integrate_two_cluster_quality": 15.691966693090308,
+    "integrated_levels_hz": [
+      -4236.224705743437,
+      2522.095489613939
+    ],
+    "isolated_transitions": 1963,
+    "rise_10_90_samples": 5.464197595276914,
+    "rise_10_90_microseconds": 9.486454158466865,
+    "rise_10_90_symbols": 0.0910699599212819,
+    "pre_transition_memory_symbols_5pct": 0.03333333333333333,
+    "post_transition_memory_symbols_5pct": 0.05
+  },
+  "B": {
+    "name": "B",
+    "integrate_phase": 36,
+    "integrate_two_cluster_quality": 3.376775697087994,
+    "integrated_levels_hz": [
+      -1794.952713865204,
+      2011.7987459865626
+    ],
+    "isolated_transitions": 1228,
+    "rise_10_90_samples": 24.610254731267943,
+    "rise_10_90_microseconds": 42.72613668622907,
+    "rise_10_90_symbols": 0.41017091218779905,
+    "pre_transition_memory_symbols_5pct": 2.0,
+    "post_transition_memory_symbols_5pct": 2.0
+  },
+  "C": {
+    "name": "C",
+    "integrate_phase": 19,
+    "integrate_two_cluster_quality": 14.694049697575256,
+    "integrated_levels_hz": [
+      -2963.0096489449256,
+      2702.121165188178
+    ],
+    "isolated_transitions": 1887,
+    "rise_10_90_samples": 5.465199799912725,
+    "rise_10_90_microseconds": 9.488194097070703,
+    "rise_10_90_symbols": 0.09108666333187874,
+    "pre_transition_memory_symbols_5pct": 0.03333333333333333,
+    "post_transition_memory_symbols_5pct": 0.05
+  }
+}

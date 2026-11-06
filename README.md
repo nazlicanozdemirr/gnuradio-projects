@@ -1,44 +1,44 @@
-# GNU Radio ve SDR Projeleri
+# GNU Radio and Digital Communications Lab
 
-Bu depo, SDR sinyal işleme çalışmaları kapsamında geliştirilen CPFSK alıcı,
-IQ analiz, ADALM-Pluto yakalama ve OQPSK HDL örneklerini bir arada tutar.
+A collection of reproducible signal-processing experiments covering CPFSK/GMSK analysis, SDR capture, native C demodulation, and an OQPSK RTL modulator.
 
-## İçerik
+## What is included
 
-- `cpfsk_9600_nrzi_g3ruh.grc`: 9600 bit/s CPFSK, NRZ-I ve G3RUH alıcı akışı.
-- `c_demod/`: GNU Radio bağımlılığı olmadan çalışan C CPFSK demodülatörü.
-- `pluto_capture/`: ADALM-Pluto üzerinden complex64 IQ yakalama uygulaması.
-- `oqpsk_verilog/`: SystemVerilog OQPSK modülatörü ve testbench'i.
-- Kök dizindeki Python betikleri: IQ kayıtlarının ölçüm, karşılaştırma ve
-  doğrulama analizleri.
-- Numaralı Markdown belgeleri: proje rehberleri ve doğrulama raporları.
+- `cpfsk_9600_nrzi_g3ruh.grc` — GNU Radio flowgraph for a 9.6 ksym/s CPFSK/G3RUH receive chain.
+- Root Python scripts — symbol-rate estimation, modulation-index analysis, filtering studies, and IQ comparison tools.
+- `c_demod/` — standalone C implementation of the CPFSK demodulation pipeline.
+- `pluto_capture/` — libiio-based PlutoSDR capture utility.
+- `oqpsk_verilog/` — synthesizable SystemVerilog OQPSK modulator with a self-checking testbench.
+- Numbered Markdown reports — experiment design, validation steps, and measured results.
 
-## Veri dosyaları
+Raw IQ captures and generated analysis artifacts are intentionally excluded from version control. The retained plots are representative results.
 
-Ham IQ kayıtları ve üretilen büyük ikili çıktılar Git deposuna dahil edilmez.
-Analizleri yeniden çalıştırmak için gerekli `complex64` kayıtlarını çalışma
-dizinine yerel olarak ekleyin. Beklenen dosya adları ve örnekleme parametreleri
-ilgili teknik belgelerde açıklanmıştır.
+## Python analysis setup
 
-## Hızlı başlangıç
-
-GNU Radio akışını GNU Radio Companion ile açabilirsiniz:
-
-```text
-cpfsk_9600_nrzi_g3ruh.grc
+```bash
+python -m venv .venv
+# Windows: .venv\Scripts\activate
+# Linux/macOS: source .venv/bin/activate
+python -m pip install -r requirements.txt
 ```
 
-Bağımsız C demodülatörünü Windows PowerShell üzerinden derlemek için:
+Place a local complex-float capture at `intern_Rec.bin` before opening the GNU Radio flowgraph. Generated output such as `decoded_bits_g3ruh.bin` remains ignored.
 
-```powershell
-powershell -ExecutionPolicy Bypass -File .\c_demod\build.ps1
+Most analysis scripts use constants near the top of each file for input paths and signal parameters. Run them from the repository root, for example:
+
+```bash
+python compare_iq_cpfsks.py
+python estimate_exact_symbol_rate.py
 ```
 
-OQPSK HDL örneğini çalıştırmak için:
+## Native and RTL components
 
-```powershell
-.\oqpsk_verilog\run_sim.ps1
-```
+See the component-specific guides:
 
-Ayrıntılı kullanım ve doğrulama sonuçları için proje klasörlerindeki README
-dosyalarına ve kök dizindeki numaralı teknik raporlara bakın.
+- [`c_demod/README.md`](c_demod/README.md)
+- [`pluto_capture/README.md`](pluto_capture/README.md)
+- [`oqpsk_verilog/README.md`](oqpsk_verilog/README.md)
+
+## Notes
+
+The detailed experiment reports are retained in Turkish because they document the original measurement and validation process. Source files and top-level usage guidance are organized for portable use.

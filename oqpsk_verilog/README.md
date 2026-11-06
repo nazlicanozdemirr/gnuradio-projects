@@ -1,30 +1,19 @@
-# OQPSK Verilog örneği
+# OQPSK Modulator RTL
 
-Giriş, `data_valid` ile yüklenen 16 bitlik bir veri buffer'ıdır. Kelime MSB'den
-başlanarak sekiz adet I/Q bit çiftine ayrılır. `SPS=4` olduğu için her OQPSK
-sembolü dört örnekleme saati sürer; Q kolu I kolundan `SPS/2=2` örnek geridedir.
-I ve Q çıkışları 16 bit işaretlidir; girişteki `1`, `+32767` seviyesine ve `0`,
-`-32767` seviyesine eşlenir. `busy`, buffer işlenirken `1` olur.
+A parameterized SystemVerilog OQPSK modulator and self-checking testbench. The design maps input bits to bipolar I/Q symbols and delays the Q branch by half a symbol period.
 
-OSS CAD Suite'in CMD terminalinde bu klasöre geçip çalıştırın:
+## Files
 
-```bat
-run_sim.bat
-gtkwave oqpsk.vcd
-```
+- `oqpsk_modulator.sv` — synthesizable modulator.
+- `tb_oqpsk.sv` — functional testbench with waveform output.
+- `run_sim.ps1` / `run_sim.bat` — Icarus Verilog simulation helpers.
 
-PowerShell terminali kullanıyorsanız alternatif olarak:
+## Simulation
+
+Install Icarus Verilog and ensure `iverilog` and `vvp` are on `PATH`, then run:
 
 ```powershell
-.\run_sim.ps1
-gtkwave oqpsk.vcd
+./run_sim.ps1
 ```
 
-GTKWave içinde `tb_oqpsk` kapsamından `clk`, `data_in`, `data_valid`, `busy`,
-`i_out` ve `q_out` sinyallerini dalga alanına ekleyin. Örnekleme saati 10 ns,
-sembol süresi 40 ns ve I/Q kayması 20 ns'dir. Testbench ayrıca I ve Q'nun aynı
-örnekleme saatinde birlikte değişmediğini otomatik olarak denetler.
-
-Analog basamak görünümü için `i_out` ve `q_out` izlerini seçip önce
-`Data Format -> Signed Decimal`, ardından `Data Format -> Analog -> Step`
-seçin.
+The simulation produces `oqpsk.vcd`, which can be inspected with GTKWave. Generated simulator and waveform files are ignored by Git.

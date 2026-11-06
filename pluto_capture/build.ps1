@@ -1,9 +1,13 @@
 $ErrorActionPreference = 'Stop'
-$gcc = 'C:\Users\nzlcn\AppData\Local\Microsoft\WinGet\Packages\BrechtSanders.WinLibs.MCF.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\mingw64\bin\gcc.exe'
-$include = 'C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include'
-$libiio = 'C:\Windows\System32\libiio.dll'
+$gcc = if ($env:CC) { $env:CC } else { (Get-Command gcc -ErrorAction Stop).Source }
+$include = $env:LIBIIO_INCLUDE
+$libiio = $env:LIBIIO_LIBRARY
 
-foreach ($required in @($gcc, (Join-Path $include 'iio.h'), $libiio)) {
+if (-not $include -or -not $libiio) {
+    throw 'Set LIBIIO_INCLUDE and LIBIIO_LIBRARY before building.'
+}
+
+foreach ($required in @((Join-Path $include 'iio.h'), $libiio)) {
     if (-not (Test-Path -LiteralPath $required)) { throw "Gerekli dosya bulunamadi: $required" }
 }
 

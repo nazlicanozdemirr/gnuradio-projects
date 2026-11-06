@@ -175,7 +175,7 @@ blocks:
     alias: ''
     append: 'False'
     comment: ''
-    file: C:\Users\nzlcn\gnuradio\decoded_bits_g3ruh.bin
+    file: decoded_bits_g3ruh.bin
     type: byte
     unbuffered: 'False'
     vlen: '1'
@@ -193,7 +193,7 @@ blocks:
     alias: ''
     begin_tag: pmt.PMT_NIL
     comment: ''
-    file: C:\Users\nzlcn\gnuradio\intern_Rec.bin
+    file: intern_Rec.bin
     length: '0'
     maxoutbuf: '0'
     minoutbuf: '0'
